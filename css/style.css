@@ -71,7 +71,7 @@ p{max-width:62ch}
 /* Ruled index lists (services) */
 .index{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
 .index li{border-top:1px solid var(--line);padding:22px 0}
-.index li:nth-last-child(-n+2){border-bottom:1px solid var(--line)}
+.index li:last-child,.index li:nth-child(odd):nth-last-child(2){border-bottom:1px solid var(--line)}
 .index h3{margin-bottom:6px}
 .index p{color:var(--muted);font-size:.98rem}
 .index a{color:inherit;text-decoration:none}
