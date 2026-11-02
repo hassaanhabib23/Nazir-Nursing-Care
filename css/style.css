@@ -135,6 +135,12 @@ input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid var(--line
 input:focus,select:focus,textarea:focus{border-color:var(--teal);outline:none;box-shadow:0 0 0 3px rgba(31,106,104,.18)}
 .hint{font-size:.88rem;color:var(--muted);margin-top:12px}
 
+/* Reviews */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.quotes figure{border-top:2px solid var(--accent);padding-top:20px}
+.quotes blockquote{font:400 1.3rem/1.45 var(--serif);color:var(--ink);margin-bottom:16px}
+.quotes figcaption{color:var(--teal);font-weight:600;font-size:.95rem}
+
 /* Call to action band */
 .cta{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
 .cta h2{max-width:16em}
@@ -153,7 +159,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--teal);outline:none;bo
   .hero .wrap,.split,.split.even,.contact,.svc{grid-template-columns:1fr}
   .index{grid-template-columns:1fr}
   .index li:nth-last-child(2){border-bottom:0}
-  .steps{grid-template-columns:1fr;gap:28px}
+  .steps,.quotes{grid-template-columns:1fr;gap:28px}
   .sticky{position:static}
   .site-foot .cols{grid-template-columns:1fr 1fr}
   .burger{display:block}
