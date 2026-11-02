@@ -62,7 +62,7 @@ p{max-width:62ch}
 .hero .actions{margin:32px 0 26px}
 .hero small{display:block;color:var(--muted);font-size:.95rem}
 
-.hero-photo img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;object-position:60% 40%;border-radius:6px;box-shadow:0 24px 48px -28px rgba(7,59,87,.45)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:58% 50%;border-radius:6px;box-shadow:0 24px 48px -28px rgba(7,59,87,.45)}
 
 /* Page header (inner pages) */
 .page-head{padding:clamp(44px,6vw,80px) 0 clamp(36px,5vw,56px);background:var(--linen);border-bottom:1px solid var(--line)}
