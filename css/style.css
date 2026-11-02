@@ -57,7 +57,8 @@ p{max-width:62ch}
 /* Hero */
 .hero{padding:clamp(48px,7vw,96px) 0;background:var(--linen);border-bottom:1px solid var(--line)}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,80px);align-items:center}
-.hero h1{margin-bottom:22px}
+.hero h1{margin-bottom:14px;font-size:clamp(2.8rem,6vw,4.6rem);line-height:1.02}
+.tagline{font:500 clamp(1.3rem,2.4vw,1.7rem) var(--serif);color:var(--teal);margin-bottom:18px}
 .hero .actions{margin:32px 0 26px}
 .hero small{display:block;color:var(--muted);font-size:.95rem}
 .plan{background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 0 var(--line),0 24px 48px -28px rgba(14,42,59,.35)}

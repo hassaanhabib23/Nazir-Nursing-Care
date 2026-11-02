@@ -12,7 +12,7 @@ Search every file for these placeholders:
 |---|---|
 | `0300 0000000`, `+923000000000`, `923000000000` | all pages and `js/main.js` (`WHATSAPP_NUMBER`) |
 | `info@nazirnursingcare.com` | footer, contact page |
-| `Lahore` and area names (DHA, Gulberg, ...) | footer, FAQ, meta tags, schema in `index.html` |
+| Area names (Islamabad sectors, Bahria Town, DHA, Satellite Town, Saddar) | footer, FAQ, meta tags, schema in `index.html` |
 | `Rs. X,XXX` | `pricing.html` |
 | `[Street address]`, `[Add the founder's story ...]` | `contact.html`, `about.html` |
 | Statements such as "Female nurses available", "CNIC verified", "phone lines open 24 hours" | Confirm each is true for the business |
