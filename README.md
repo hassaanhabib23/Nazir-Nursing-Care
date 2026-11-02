@@ -10,7 +10,7 @@ Search every file for these placeholders:
 
 | Placeholder | Where |
 |---|---|
-| `info@nazirnursingcare.com` (contact email) | footer, contact page |
+| `nazirnursingcare@gmail.com` (contact email) | footer, contact page |
 | Area names (Islamabad sectors, Bahria Town, DHA, Satellite Town, Saddar) | footer, FAQ, meta tags, schema in `index.html` |
 | Starting rates (estimates, please confirm) | `pricing.html` |
 | `[Street address]`, `[Add the founder's story ...]` | `contact.html`, `about.html` |

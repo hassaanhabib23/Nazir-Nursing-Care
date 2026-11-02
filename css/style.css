@@ -61,19 +61,8 @@ p{max-width:62ch}
 .tagline{font:500 clamp(1.3rem,2.4vw,1.7rem) var(--serif);color:var(--teal);margin-bottom:18px}
 .hero .actions{margin:32px 0 26px}
 .hero small{display:block;color:var(--muted);font-size:.95rem}
-.plan{background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 0 var(--line),0 24px 48px -28px rgba(14,42,59,.35)}
-.plan-top{display:flex;justify-content:space-between;gap:12px;padding:18px 24px;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--muted)}
-.plan-top b{font:500 1.15rem var(--serif);color:var(--ink)}
-.plan ol{list-style:none}
-.plan li{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:14px 24px;border-bottom:1px solid var(--line);font-size:.98rem;animation:rowin .6s both}
-.plan li:last-child{border-bottom:0}
-.plan time{font-weight:600;color:var(--teal);font-variant-numeric:tabular-nums}
-.plan li:nth-child(1){animation-delay:.15s}.plan li:nth-child(2){animation-delay:.25s}
-.plan li:nth-child(3){animation-delay:.35s}.plan li:nth-child(4){animation-delay:.45s}
-.plan li:nth-child(5){animation-delay:.55s}.plan li:nth-child(6){animation-delay:.65s}
-.plan li:nth-child(7){animation-delay:.75s}
-.plan-foot{padding:14px 24px;background:var(--linen);border-radius:0 0 6px 6px;font-size:.88rem;color:var(--muted)}
-@keyframes rowin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.hero-photo img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;object-position:60% 40%;border-radius:6px;box-shadow:0 24px 48px -28px rgba(7,59,87,.45)}
 
 /* Page header (inner pages) */
 .page-head{padding:clamp(44px,6vw,80px) 0 clamp(36px,5vw,56px);background:var(--linen);border-bottom:1px solid var(--line)}
@@ -177,9 +166,6 @@ input:focus,select:focus,textarea:focus{border-color:var(--teal);outline:none;bo
 @media(max-width:520px){
   .brand img{height:46px}
   .site-foot .cols{grid-template-columns:1fr}
-  .plan li{grid-template-columns:82px 1fr;gap:12px;padding:12px 18px}
-  .plan time{white-space:nowrap}
-  .plan-top,.plan-foot{padding-inline:18px}
   .cta .actions,.hero .actions{width:100%}
   .cta .btn,.hero .btn{flex:1 1 100%}
   tbody th{width:auto}
