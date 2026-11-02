@@ -13,7 +13,7 @@ Search every file for these placeholders:
 | `nazirnursingcare@gmail.com` (contact email) | footer, contact page |
 | Area names (Islamabad sectors, Bahria Town, DHA, Satellite Town, Saddar) | footer, FAQ, meta tags, schema in `index.html` |
 | Starting rates (estimates, please confirm) | `pricing.html` |
-| `[Street address]`, `[Add the founder's story ...]` | `contact.html`, `about.html` |
+| `[Add the founder's story ...]` | `about.html` |
 | Statements such as "Female nurses available", "CNIC verified",  | Confirm each is true for the business |
 
 ## Design
