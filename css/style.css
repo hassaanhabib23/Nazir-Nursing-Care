@@ -1,7 +1,7 @@
 /* Nazir Nursing Care — design tokens */
 :root{
-  --ink:#0e2a3b; --ink-deep:#091c28; --linen:#f5f7f6; --white:#fff;
-  --teal:#1f6a68; --brass:#9c7a3c; --line:#d5dedc; --muted:#53666f; --wa:#1b8f4e;
+  --ink:#073b57; --blue:#066d9b; --ink-deep:#052c42; --linen:#f5f7f6; --white:#fff;
+  --teal:#07726b; --accent:#4b9c3b; --line:#d5dedc; --muted:#53666f; --wa:#1b8f4e;
   --serif:'Newsreader',Georgia,serif; --sans:'Public Sans',system-ui,sans-serif;
   --wrap:1120px;
 }
@@ -10,7 +10,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--sans);color:var(--ink);background:var(--white);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%;display:block}
 a{color:var(--teal)}
-:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
 
 /* Type scale */
@@ -44,13 +44,11 @@ p{max-width:62ch}
 /* Header */
 .site-head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);line-height:1.1}
-.brand img{width:40px;height:40px;flex:none;border-radius:8px}
-.brand b{display:block;font:500 1.65rem var(--serif);letter-spacing:-.01em}
-.brand span{display:block;font-size:.78rem;color:var(--muted);letter-spacing:.04em;padding-top:3px;border-top:1.5px solid var(--brass);margin-top:3px;width:max-content}
+.brand{display:flex;align-items:center;text-decoration:none}
+.brand img{height:60px;width:auto}
 .menu{display:flex;align-items:center;gap:30px;list-style:none}
 .menu a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.97rem;padding:6px 0;border-bottom:1.5px solid transparent}
-.menu a:hover,.menu a[aria-current="page"]{border-color:var(--brass)}
+.menu a:hover,.menu a[aria-current="page"]{border-color:var(--accent)}
 .menu .btn{padding:10px 20px;border:1.5px solid transparent;color:#fff}
 .menu .btn:hover{border-color:transparent}
 .burger{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--ink)}
@@ -97,8 +95,8 @@ p{max-width:62ch}
 
 /* Steps (a real sequence) */
 .steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:s}
-.steps li{counter-increment:s;border-top:2px solid var(--brass);padding-top:18px}
-.steps li:before{content:counter(s);font:500 2.4rem var(--serif);color:var(--brass);display:block;line-height:1;margin-bottom:12px}
+.steps li{counter-increment:s;border-top:2px solid var(--accent);padding-top:18px}
+.steps li:before{content:counter(s);font:500 2.4rem var(--serif);color:var(--accent);display:block;line-height:1;margin-bottom:12px}
 .steps h3{margin-bottom:8px}
 .steps p{color:var(--muted)}
 
@@ -120,7 +118,7 @@ thead th{border-top:0;border-bottom:2px solid var(--ink);font-weight:600;font-si
 tbody tr:last-child td,tbody tr:last-child th{border-bottom:1px solid var(--line)}
 tbody th{font:500 1.2rem var(--serif);width:34%}
 td.rs{font:500 1.3rem var(--serif);white-space:nowrap}
-.aside{margin-top:28px;padding:18px 22px;border-left:3px solid var(--brass);background:var(--linen);font-size:.97rem}
+.aside{margin-top:28px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--linen);font-size:.97rem}
 
 /* FAQ */
 .faq{max-width:780px}
@@ -152,14 +150,13 @@ input:focus,select:focus,textarea:focus{border-color:var(--teal);outline:none;bo
 .cta h2{max-width:16em}
 
 /* Footer */
-.site-foot{background:var(--ink-deep);color:#9db3bc;padding:64px 0 0;font-size:.97rem}
+.site-foot{background:var(--linen);color:var(--muted);border-top:1px solid var(--line);padding:64px 0 0;font-size:.97rem}
 .site-foot .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:44px}
-.site-foot h2{font:600 .95rem var(--sans);color:#fff;margin-bottom:14px;letter-spacing:0}
-.site-foot a{color:#9db3bc;text-decoration:none}.site-foot a:hover{color:#fff}
+.site-foot h2{font:600 .95rem var(--sans);color:var(--ink);margin-bottom:14px;letter-spacing:0}
+.site-foot a{color:var(--muted);text-decoration:none}.site-foot a:hover{color:var(--ink)}
 .site-foot ul{list-style:none}.site-foot li{margin-bottom:8px}
-.site-foot .brand b{color:#fff}.site-foot .brand span{color:#9db3bc}
 .site-foot p{margin-top:16px;max-width:30ch}
-.legal{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;font-size:.85rem}
+.legal{border-top:1px solid var(--line);padding:20px 0;font-size:.85rem}
 
 /* Mobile call bar */
 .mbar{display:none}
@@ -184,6 +181,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--teal);outline:none;bo
   body{padding-bottom:54px}
 }
 @media(max-width:520px){
+  .brand img{height:46px}
   .site-foot .cols{grid-template-columns:1fr}
   .plan li{grid-template-columns:82px 1fr;gap:12px;padding:12px 18px}
   .plan time{white-space:nowrap}

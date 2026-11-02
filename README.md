@@ -18,7 +18,12 @@ Search every file for these placeholders:
 | Statements such as "Female nurses available", "CNIC verified", "phone lines open 24 hours" | Confirm each is true for the business |
 
 ## Design
-Fonts: Newsreader (headings), Public Sans (body). Colours are CSS variables at the top of `css/style.css`.
+Fonts: Newsreader (headings), Public Sans (body). Colours are CSS variables at the top of `css/style.css` and match the logo (blue, teal, green).
+
+## Logo files (`images/`)
+`logo-full.png` (stacked logo), `logo-horizontal.png` (header and footer), `icon-512.png`, `icon-192.png`, `apple-touch-icon.png`, `favicon.png`, `favicon.ico`. All have transparent backgrounds except the apple touch icon.
+
+When the final domain is set, update the `og:image` URL (`https://nazir-nursing-care.mylogiclab.cloud/...`) in each page's `<head>`.
 
 ## Deploy
 Upload the folder to Netlify, Vercel or GitHub Pages, then connect the domain.
