@@ -10,12 +10,11 @@ Search every file for these placeholders:
 
 | Placeholder | Where |
 |---|---|
-| `0300 0000000`, `+923000000000`, `923000000000` | all pages and `js/main.js` (`WHATSAPP_NUMBER`) |
-| `info@nazirnursingcare.com` | footer, contact page |
+| `noreply@nazirnursingcare.com` (contact email) | footer, contact page |
 | Area names (Islamabad sectors, Bahria Town, DHA, Satellite Town, Saddar) | footer, FAQ, meta tags, schema in `index.html` |
 | `Rs. X,XXX` | `pricing.html` |
 | `[Street address]`, `[Add the founder's story ...]` | `contact.html`, `about.html` |
-| Statements such as "Female nurses available", "CNIC verified", "phone lines open 24 hours" | Confirm each is true for the business |
+| Statements such as "Female nurses available", "CNIC verified",  | Confirm each is true for the business |
 
 ## Design
 Fonts: Newsreader (headings), Public Sans (body). Colours are CSS variables at the top of `css/style.css` and match the logo (blue, teal, green).
